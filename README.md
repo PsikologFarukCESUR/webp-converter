@@ -1,21 +1,47 @@
-# webp-converter
+# WebP Dönüştürücü
 
-# Projenizin bulunduğu klasöre gidin
-cd your-project-path
+WebP Dönüştürücü, JPG ve PNG formatındaki görüntüleri WebP formatına dönüştüren kullanımı kolay bir masaüstü uygulamasıdır.
 
-# Git deposunu başlatın
-git init
+## Özellikler
 
-# Yukarıdaki artifact'leri oluşturun (README.md, .gitignore, requirements.txt)
+- Tek dosya veya toplu klasör dönüştürme
+- Kalite ayarı (1-100 arası)
+- Orijinal dosyaları silme seçeneği
+- Klasör yapısını koruma seçeneği
+- Özel dosya isimlendirme
+- Dönüştürme sonuçlarını detaylı görüntüleme
+- Kolay kullanımlı grafiksel arayüz
 
-# Dosyaları staging area'ya ekleyin
-git add .
+## Kurulum
 
-# İlk commit'i oluşturun
-git commit -m "Initial commit"
+1. Python 3.6 veya üzeri sürümünün yüklü olduğundan emin olun
+2. Gerekli kütüphaneleri yükleyin:
+```bash
+pip install -r requirements.txt
+```
 
-# Remote repository'yi ekleyin (URL'yi GitHub'dan alın)
-git remote add origin https://github.com/kullanıcı-adınız/webp-converter.git
+## Kullanım
 
-# Kodunuzu GitHub'a gönderin
-git push -u origin master
+Programı başlatmak için:
+```bash
+python webp-converter.py
+```
+
+1. "Dosya Seç" veya "Klasör Seç" butonlarıyla dönüştürmek istediğiniz görüntüleri seçin
+2. İsteğe bağlı olarak hedef klasörü seçin
+3. Kalite ayarını yapın (varsayılan: 80%)
+4. İsterseniz diğer seçenekleri ayarlayın:
+   - Orijinal dosyaları sil
+   - Klasör yapısını koru
+   - Dosya adlarını değiştir
+5. "Dönüştür" butonuna tıklayın
+
+## Gereksinimler
+
+- Python 3.6+
+- Pillow
+- tkinter (Python ile birlikte gelir)
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
