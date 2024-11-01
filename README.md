@@ -42,6 +42,3 @@ python webp-converter.py
 - Pillow
 - tkinter (Python ile birlikte gelir)
 
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
